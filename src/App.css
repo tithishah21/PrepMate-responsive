@@ -1,0 +1,14 @@
+@import "tailwindcss";
+<<<<<<< HEAD
+/* .bg{
+    background-image: url(./assets/Desktop.png);
+    width:900px;
+    height:700px;
+    background-size: cover;
+
+} */
+=======
+>>>>>>> 6fe52c3 (Initial Commit)
+html {
+    scroll-behavior: smooth;
+  }
