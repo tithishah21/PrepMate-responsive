@@ -11,7 +11,7 @@ const Hero = ({ isDashboard,text }) =>{
     return (
         <>
         
-        <section className = " Hero lg:w-full h-screen bg-cover bg-center pt-0 pb-0" style = {{backgroundImage:`url(${component})`}}>
+        <section className = "Hero lg:w-full h-screen bg-cover bg-center pt-0 pb-0" style = {{backgroundImage:`url(${component})`}}>
                 <Navbar text = {text} isDashboard = {isDashboard}/>
                 <div className = "flex flex-col justify-center items-center lg:w-full mt-60 lg:mt-40  ">
                     <motion.img src = {title}

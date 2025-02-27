@@ -58,15 +58,15 @@ const YoutubeSummarizer = () => {
     return (
         <>
             <div className="flex justify-center items-center h-screen">
-                <div className="flex w-[1304px] h-[794px] bg-[rgba(254,255,255,0.14)] rounded-[32px]">
+                <div className="lg:flex w-[360px] lg:w-[1304px] h-[770px] lg:h-[794px] bg-[rgba(254,255,255,0.14)] rounded-[32px]">
                     <div className="Logo w-[326px] h-[97px] relative">
-                        <div className="absolute top-80 left-30 w-[600px]">
+                        <div className="absolute top-10 lg:top-80 left-4 lg:left-30 w-[330px] lg:w-[600px]">
                             <img src={PMlogo} className="w-[400px]" alt="PM Logo" />
                         </div>
                     </div>
-                    <div className="user-input absolute top-30 right-62">
-                        <h1 className="text-white font-poppins text-5xl font-[700]">Youtube Summarizer</h1>
-                        <h3 className="text-white font-poppins text-2xl font-[600] mt-5">Upload the youtube video link below...</h3>
+                    <div className="user-input absolute top-75 lg:top-20 lg:right-55">
+                        <h1 className="text-white font-poppins text-3xl lg:text-5xl font-[700]">Youtube Summarizer</h1>
+                        <h3 className="text-white font-poppins text-xl lg:text-3xl font-[600] mt-5">Upload the youtube video link below...</h3>
                     </div>
 
                     <form onSubmit={handleSubmit}>
@@ -76,7 +76,7 @@ const YoutubeSummarizer = () => {
                             value={videoUrl.link}
                             onChange={handleChange}
                             placeholder="Enter Youtube Video URL"
-                            className="mt-90 ml-100 p-2 rounded-md border-b-1 w-[500px] placeholder-white text-white focus:outline-none"
+                            className="mt-90 lg:mt-90 p-2 rounded-md border-b-1 ml-0 lg:ml-90 w-[99%] lg:w-[59%] placeholder-white text-white focus:outline-none"
                         />
 
                         {errorMessage && (
@@ -85,7 +85,7 @@ const YoutubeSummarizer = () => {
 
                         <button
                             type="submit"
-                            className="mt-13 ml-95 w-[500px] h-[40px] bg-[rgba(0,134,255,1)] rounded-xl text-white text-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            className="mt-21 lg:mt-13 ml-0 lg:ml-103 w-[360px] lg:w-[550px] h-[40px] bg-[rgba(0,134,255,1)] rounded-xl text-white text-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             disabled={loading}
                         >
                             {loading ? "Loading..." : "Upload"}
@@ -94,7 +94,7 @@ const YoutubeSummarizer = () => {
                 </div>
 
                 <button onClick={goBack}>
-                    <img src={Arrow_right} className="cursor-pointer w-[55px] h-[auto] absolute top-15 left-35" alt="Back Arrow" />
+                    <img src={Arrow_right} className="cursor-pointer w-[30px] lg:w-[55px] h-[auto] absolute top-10 lg:top-15 left-6 lg:left-35" alt="Back Arrow" />
                 </button>
             </div>
         </>
