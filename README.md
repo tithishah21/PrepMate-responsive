@@ -1,4 +1,4 @@
-#PrepMate: Smarter Exam Preparation for VIT Students
+##PrepMate: Smarter Exam Preparation for VIT Students
 
 PrepMate is an AI-driven platform designed to enhance exam preparation for VIT University students. By uploading previous year question papers, students can instantly identify important topics and receive personalized YouTube video recommendations. The platform features a YouTube Video Summarizer to provide quick summaries of lengthy lectures, saving crucial study time. Additionally, AI-generated practice questions (MCQs and short answers) help reinforce key concepts. A built-in performance tracker analyzes quiz results, offering targeted study suggestions. PrepMate transforms traditional studying into an efficient, personalized, and data-driven experience, making exam preparation smarter and more effective for VIT students.
 
